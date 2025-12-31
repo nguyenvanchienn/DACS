@@ -1,0 +1,44 @@
+{
+    "welcome_title": "Welcome to Tourn",
+    "welcome_desc": "Your ultimate tournament management app.",
+    "app_name": "Tourn",
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out",
+    "settings": "settings",
+    "getstarted": "Get Started",
+    "login_title": "Login to Tourn",
+    "login_username": "Username",
+    "login_username_desc": "Enter your username",
+    "login_password": "Password",
+    "login_buttom": "Login",
+    "login_desc": "OR",
+    "login_continue_google": "Continue with Google",
+    "login_continue_facebook": "Continue with Facebook",
+    "login_desc1": "Don't have an account? ",
+    "signin_title": "Sign Up to Tourn",
+    "signin_username": "Username",
+    "signin_username_desc": "Enter your username",
+    "signin_password": "Password",
+    "signin_confirm_password": "Confirm Password",
+    "signin_buttom": "Sign Up",
+    "signin_register_google": "Register with Google",
+    "signin_register_facebook": "Register with Facebook",
+    "signin_desc1": "Already have an account? ",
+    "signin_buttom1": "Login",
+    "signout_buttom": "Sign out",
+    "home": "Home",
+    "menu": "Menu",
+    "mail": "Mail",
+    "map": "Map",
+    "favorite": "Favorite",
+    "search" : "Search",
+    "Create_content_page" : "Create Content"
+
+    
+
+    
+
+
+
+}
