@@ -1,10 +1,16 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:tourn/Ui/main/category/home/buttom_add/add%20and%20edit/create_and_edit_content.dart';
 import 'package:tourn/Ui/splash/splash.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:tourn/Ui/main/category/home/buttom_add/add%20and%20edit/a.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized(); // Đảm bảo các binding của Flutter được khởi tạo
   await EasyLocalization.ensureInitialized(); // Khởi tạo EasyLocalization trước khi chạy ứng dụng
+
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(
     EasyLocalization(

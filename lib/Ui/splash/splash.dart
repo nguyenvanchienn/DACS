@@ -8,6 +8,9 @@ class SplashScreen extends StatelessWidget {
 
   Future<void> checkappstatus(BuildContext context) async {
     // Hàm giả lập kiểm tra trạng thái ứng dụng
+    await Future.delayed(
+      const Duration(seconds: 3),
+    ); // Giả lập thời gian chờ 3 giây
     final iscomplete = await isonboardingcompleted();
     if (iscomplete) {
       // Nếu đã hoàn thành onboarding, chuyển đến trang chào mừng
@@ -47,10 +50,14 @@ class SplashScreen extends StatelessWidget {
     checkappstatus(context);
     // Kiểm tra trạng thái ứng dụng khi xây dựng giao diện
     return Scaffold(
-      backgroundColor: const Color(0xFF121212),
-      body: SafeArea(
-        // SafeArea để tránh các khu vực không an toàn trên
-        child: _buildbodypage(), // Gọi phương thức xây dựng nội dung chính
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('asset/images/background.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: SafeArea(child: _buildbodypage()),
       ),
     );
   }
@@ -58,12 +65,11 @@ class SplashScreen extends StatelessWidget {
   Widget _buildbodypage() {
     return Center(
       child: Container(
-        color: const Color.fromARGB(255, 27, 40, 129),
         child: Column(
           mainAxisSize: MainAxisSize.min, // Cột chỉ chiếm không gian cần thiết
           children: [
             _buildiconpage(), // Gọi phương thức xây dựng hình ảnh logo
-            const SizedBox(height: 20), // Khoảng cách giữa hình ảnh và văn bản
+            const SizedBox(height: 10), // Khoảng cách giữa hình ảnh và văn bản
             _buildtextpage(), // Gọi phương thức xây dựng văn bản chào mừng
           ],
         ),
@@ -73,19 +79,19 @@ class SplashScreen extends StatelessWidget {
 
   Widget _buildiconpage() {
     return Image.asset(
-      'asset/images/Group 151.png',
+      'asset/icon/logo.png',
       width: 95,
-      height: 80,
+      height: 140,
       fit: BoxFit.cover, // Đảm bảo hình ảnh được bao phủ đúng cách
     );
   }
 
   Widget _buildtextpage() {
     return Text(
-      'Welcome to Tourn!',
+      'TRIP',
       style: TextStyle(
         fontSize: 40,
-        color: Colors.white,
+        color: Color(0xFFFFB620),
         fontWeight: FontWeight.bold,
       ),
     );

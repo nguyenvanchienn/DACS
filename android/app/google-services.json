@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1009935937244",
+    "firebase_url": "https://trip-995d7-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "trip-995d7",
+    "storage_bucket": "trip-995d7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009935937244:android:34175ef7b6230501158e19",
+        "android_client_info": {
+          "package_name": "com.example.tourn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjIZN4BRMgLmab4lH-IjQ3TQY7_VJ5oNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
